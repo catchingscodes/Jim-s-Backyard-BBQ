@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/bpg5swo.css">
+
+</head>
+
+<body>
+  <div class="menu">
+    <nav class="header" id="header">
+
+      <img src="images/jimsbbqlogo.png" alt="Jim's logo"
+        style="width:200px;display: block;margin-left: auto;margin-right: auto;">
+
+      <ul class="menu-header">
+        <li class="menu-header-tab"><a href="index.html">Home</a></li>
+        <li class="menu-header-tab"><a href="menu.html">Menu</a></li>
+        <li class="menu-header-tab"><a href="specialevent.html">Events & Specials</a></li>
+        <li class="menu-header-tab"><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section>
+      <h2>Contact Us</h2>
+      <p>For questions, reservations or feedback, fill out the form below.</p>
+    </section>
+    <!-- Contact form -->
+    <div class="contactForm">
+      <form id="contact" method="post" autocomplete="on" action="contact.php">
+        <div class="row">
+          <div class="col">
+            <!-- First Name input -->
+            <label for="fname"> First Name<input type="text" class="form-control" placeholder="Enter first name"
+                name="fname" id="fname">
+              <span id="err1"></span>
+            </label>
+          </div>
+          <div class="col">
+            <!-- Last Name input -->
+            <label for="lname">Last Name<input type="text" class="form-control" placeholder="Enter last name"
+                name="lname" id="lname">
+              <span id="err2"></span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <!--Email input -->
+            <label for="email">Email<input type="text" class="form-control" placeholder="mail@mail.com" name="email"
+                id="email">
+              <span id="err3"></span>
+            </label>
+          </div>
+          <div class="col">
+            <!-- Phone nubmer input -->
+            <label for="phonenum">Phone<input type="tel" class="form-control" placeholder="000-000-000" name="phonenum"
+                id="phonenum">
+              <span id="err4"></span>
+            </label>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <!-- Comments -->
+            <label for="session-cmnt">Comments</label>
+            <textarea class="form-control" rows="5" name="session-cmnt" id="session-cmnt"></textarea>
+          </div>
+        </div>
+        <!-- submit button -->
+        <div class="buttons">
+          <button type="button" id="contactBtn">Submit</button>
+          <button type="reset" id="resetBtn" onClick="window.location.reload()">Clear</button>
+          
+        </div>
+      </form>
+      <!--onclick="contactBtn()"-->
+    </div>
+    <div id="output"></div>
+    <!-- <div class="content-2"> -->
+
+    <!-- </div> -->
+  </main>
+  <!--id="page3"-->
+  <footer>
+    <div class="footer">
+      <ul>
+        <li><a href="#"> Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy;2020-
+          <script>document.write(new Date().getFullYear())</script> Jim's Backyard BBQ
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- <script>
+    let submitBtn = document.getElementById("contactBtn");
+    contactBtn();
+
+    function contactBtn() {
+        onclick
+    }
+  </script>  -->
+  <script src="utilities.js"></script>
+  <script src="contact.js"></script>
+</body>
+
+</html>
