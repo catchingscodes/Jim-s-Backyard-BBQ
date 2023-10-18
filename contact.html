@@ -33,7 +33,7 @@
     </section>
     <!-- Contact form -->
     <div class="contactForm">
-      <form id="contact" method="post" autocomplete="on" action="contact.php">
+      <form id="contact" method="post" autocomplete="off" action="contact.php">
         <div class="row">
           <div class="col">
             <!-- First Name input -->
@@ -71,23 +71,24 @@
         <div class="row">
           <div class="col">
             <!-- Comments -->
-            <label for="session-cmnt">Comments</label>
-            <textarea class="form-control" rows="5" name="session-cmnt" id="session-cmnt"></textarea>
+            <label for="comments">Comments<span class="count" id="count"></span></label>
+            <textarea class="form-control" rows="5" name="comments" id="comments"></textarea>
           </div>
         </div>
         <!-- submit button -->
         <div class="buttons">
           <button type="button" id="contactBtn">Submit</button>
           <button type="reset" id="resetBtn" onClick="window.location.reload()">Clear</button>
-          
+
         </div>
       </form>
-      <!--onclick="contactBtn()"-->
+
     </div>
     <div id="output"></div>
-    <!-- <div class="content-2"> -->
+
 
     <!-- </div> -->
+    <a class="top-button" href="#header">Back to Top</a>
   </main>
   <!--id="page3"-->
   <footer>
@@ -95,20 +96,12 @@
       <ul>
         <li><a href="#"> Terms of Use</a></li>
         <li><a href="#">Privacy Policy</a></li>
-        <li>&copy;2020-
+        <li>&copy;2020 -
           <script>document.write(new Date().getFullYear())</script> Jim's Backyard BBQ
         </li>
       </ul>
     </div>
   </footer>
-  <!-- <script>
-    let submitBtn = document.getElementById("contactBtn");
-    contactBtn();
-
-    function contactBtn() {
-        onclick
-    }
-  </script>  -->
   <script src="utilities.js"></script>
   <script src="contact.js"></script>
 </body>
